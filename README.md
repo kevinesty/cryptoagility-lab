@@ -137,7 +137,7 @@ Guía detallada para Windows + Visual Studio Code: [`docs/instalacion-windows-vs
 **Windows (PowerShell):**
 
 ```powershell
-git clone https://github.com/TU_USUARIO/cryptoagility-lab.git
+git clone https://github.com/kevinesty/cryptoagility-lab.git
 cd cryptoagility-lab
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
