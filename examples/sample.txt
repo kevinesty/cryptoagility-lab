@@ -1,0 +1,2 @@
+Este es un archivo de ejemplo SIN información real.
+Sirve para probar el cifrado y el descifrado con CryptoAgility Lab.

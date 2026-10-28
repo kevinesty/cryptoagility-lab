@@ -1,0 +1,33 @@
+# --- Secretos: NUNCA deben subirse a Git ---
+keys/
+*.key
+*.pem
+.env
+.env.*
+
+# --- Archivos cifrados / datos de prueba locales ---
+*.enc
+!examples/*.enc
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+
+# --- Editores / SO ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

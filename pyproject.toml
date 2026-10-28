@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryptoagility-lab"
+version = "1.0.0"
+description = "Laboratorio educativo de cifrado de archivos (AES-256-GCM) y agilidad criptográfica"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["cryptography>=42.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+cryptoagility = "cryptoagility.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+# Cualquier advertencia (p. ej. PytestUnhandledThreadExceptionWarning) hace fallar la suite.
+filterwarnings = ["error"]
